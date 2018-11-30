@@ -3,8 +3,8 @@
 
 To run: 
 
-'''
+```
 cd value_iteration
 python3 value_iteration_frozen_lake.py
-'''
+```
 
