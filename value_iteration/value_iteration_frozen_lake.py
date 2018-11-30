@@ -5,7 +5,7 @@ from gym import wrappers
 
 import pdb
 
-# added this to make the frozen lake environment non-slippery i.e. deterministic
+# added this to make the frozen lake environment non-slippery i.e. deterministic. UNCOMMENT THIS TO R|USE DETERMINISTIC ENV
 # from gym.envs.registration import register
 # register(
 #     id='FrozenLakeNotSlippery-v0',
@@ -87,7 +87,7 @@ def evaluate_policy(env, policy, gamma = 1.0, n = 100)	:
 	
 
 
-env_name = 'FrozenLake8x8-v0'
+env_name = 'FrozenLake8x8-v0' # delete 8x8 to run 4x4 env
 gamma = 1
 env = gym.make(env_name).unwrapped
 optimal_v = value_iteration(env, gamma)
